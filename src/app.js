@@ -1,13 +1,7 @@
-require('./styles/app.scss');
+require('./styles/usage/app.scss');
 
-//
-// var string = require('./scripts/common');
-// console.log(string);
+var common = require('./scripts/utils/util.common.js');
+var html = require('./scripts/tpls/index.string');
+common.render(html);
 
-//
-// import Name from './scripts/common';
-// console.log(Name);
-
-var common = require('./scripts/common');
-
-common.getList();
+require('./scripts/views/index.js');

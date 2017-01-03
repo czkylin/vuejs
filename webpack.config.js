@@ -28,6 +28,10 @@ module.exports = {
         test: /\.scss$/,
         // loader: 'style!css!sass'
         loader: ET.extract('style', 'css!sass')
+      },
+      {
+        test: /\.string$/,
+        loader: 'string'
       }
     ]
   },

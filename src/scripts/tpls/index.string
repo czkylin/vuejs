@@ -1,0 +1,57 @@
+<div class="m-index" id="m-index">
+  <header>
+    <ul>
+      <li class="yo-ico">&#xe63d;</li>
+      <li>
+        <span class="active">热点</span>
+        <span>关注</span>
+      </li>
+      <li class="yo-ico">&#xe66e;</li>
+    </ul>
+  </header>
+  <nav>
+    <ul>
+      <li v-on:click="changeTab(index)" :class="{active: item.isActive}" v-for="(item,index) in nav">{{item.title}}</li>
+    </ul>
+  </nav>
+  <section>
+    <div class="swiper-container" id='index-swiper'>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul>
+            <li v-for="item in list">
+              <i><img :src="item.imgSrc"/></i>
+              <b v-html="item.title"></b>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">slider2</div>
+        <div class="swiper-slide">slider3</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li class="active">
+        <i class="yo-ico">&#xe606;</i>
+        <b>首页</b>
+      </li>
+      <li>
+        <i class="yo-ico">&#xe611;</i>
+        <b>发现</b>
+      </li>
+      <li>
+        <i class="yo-ico">&#xe7ac;</i>
+        <b></b>
+      </li>
+      <li>
+        <i class="yo-ico">&#xf0124;</i>
+        <b>我的</b>
+      </li>
+      <li>
+        <i class="yo-ico">&#xe620;</i>
+        <b>退出</b>
+      </li>
+    </ul>
+  </footer>
+</div>
