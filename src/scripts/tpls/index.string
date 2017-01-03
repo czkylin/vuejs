@@ -33,24 +33,24 @@
   <footer>
     <ul>
       <li class="active">
-        <i class="yo-ico">&#xe606;</i>
+        <i class="yo-ico">&#xe613;</i>
         <b>首页</b>
       </li>
       <li>
-        <i class="yo-ico">&#xe611;</i>
-        <b>发现</b>
+        <i class="yo-ico">&#xe860;</i>
+        <b>路线</b>
       </li>
       <li>
-        <i class="yo-ico">&#xe7ac;</i>
+        <i class="yo-ico">&#xe6c9;</i>
         <b></b>
       </li>
       <li>
-        <i class="yo-ico">&#xf0124;</i>
-        <b>我的</b>
+        <i class="yo-ico">&#xe746;</i>
+        <b>朋友</b>
       </li>
       <li>
-        <i class="yo-ico">&#xe620;</i>
-        <b>退出</b>
+        <i class="yo-ico">&#xe60f;</i>
+        <b>我</b>
       </li>
     </ul>
   </footer>

@@ -113,25 +113,28 @@
         b{
           font-size: .12rem;
           line-height: .14rem;
+            font-weight: 100;
         }
         i{
-          font-size: .28rem;
+          font-size: .25rem;
           height: .3rem;
           line-height: .3rem;
         }
         &:nth-child(3){
           i{
-            @include border(1px, #ced6d0, solid, 50%);
+//          @include border(1px, #ced6d0, solid, 50%);
             @include transform(translateX(-50%));
             position: relative;
             left: 50%;
             width: .6rem;
             height: .6rem;
-            top: -0.16rem;
-            background-color: #fff;
-            z-index: 9999;
-            line-height: .52rem;
-            font-size: .40rem;
+//          color: green;          
+//          background: #ccc;
+//          top: -0.16rem;
+//          background-color: #fff;
+//          z-index: 9999;
+            line-height: .47rem;
+            font-size: .43rem;
           }
         }
       }
