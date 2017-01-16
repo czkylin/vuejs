@@ -1,8 +1,50 @@
-$base-color:green;
+$base-color:#1bad88;
+%header{
+  header{
+    height: .44rem;
+    background:$base-color;
+    text-align: center;
+    line-height: .44rem;
+    color: #fff;
+    ul{
+      @include flexbox();
+      height: 100%;
+      li{
+        a{
+          color: #fff;
+        }
+      }
+      li:first-child,
+      li:last-child{
+        width: .44rem;
+        height: 100%;
+
+      }
+      li:nth-child(2){
+        @include flex();
+
+      }
+    }
+  }
+}
 @font-face {font-family: "yofont";
-  src: url('/images/fonts/iconfont.eot?t=1483447186837'); /* IE9*/
-  src: url('/images/fonts/iconfont.eot?t=1483447186837#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('/images/fonts/iconfont.woff?t=1483447186837') format('woff'), /* chrome, firefox */
-  url('/images/fonts/iconfont.ttf?t=1483447186837') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('/images/fonts/iconfont.svg?t=1483447186837#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('/images/fonts/footerIconfont.eot?t=1483447186837'); /* IE9*/
+  src: url('/images/fonts/footerIconfont.eot?t=1483447186837#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/footerIconfont.woff?t=1483447186837') format('woff'), /* chrome, firefox */
+  url('/images/fonts/footerIconfont.ttf?t=1483447186837') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/footerIconfont.svg?t=1483447186837#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font-face {font-family: "yofont";
+  src: url('/images/fonts/iconfont.eot?t=1483437400413'); /* IE9*/
+  src: url('/images/fonts/iconfont.eot?t=1483437400413#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/iconfont.woff?t=1483437400413') format('woff'), /* chrome, firefox */
+  url('/images/fonts/iconfont.ttf?t=1483437400413') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/iconfont.svg?t=1483437400413#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font-face {font-family: "yofont";
+  src: url('/images/fonts/iconfont-back.eot?t=1483697056517'); /* IE9*/
+  src: url('/images/fonts/iconfont-back.eot?t=1483697056517#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/iconfont-back.woff?t=1483697056517') format('woff'), /* chrome, firefox */
+  url('/images/fonts/iconfont-back.ttf?t=1483697056517') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/iconfont-back.svg?t=1483697056517#iconfont') format('svg'); /* iOS 4.1- */
 }

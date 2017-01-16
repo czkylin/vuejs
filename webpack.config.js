@@ -32,8 +32,23 @@ module.exports = {
       {
         test: /\.string$/,
         loader: 'string'
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue'
       }
-    ]
+    ],
+    vue:{
+      loaders:{
+        js:'babel'
+      }
+    }
+  },
+
+  resolve:{
+    alias:{
+      'vue$': 'vue/dist/vue.min.js'
+    }
   },
 
   devServer: {
@@ -51,7 +66,7 @@ module.exports = {
   },
 
   plugins: [
-    //new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
     new ET('bundle.css')
   ]
 }

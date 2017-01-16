@@ -81,7 +81,7 @@
 /* 6 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"m-index\" id=\"m-index\">  <header>    <ul>      <li class=\"yo-ico\">&#xe63d;</li>      <li>        <span class=\"active\">热点</span>        <span>关注</span>      </li>      <li class=\"yo-ico\">&#xe66e;</li>    </ul>  </header>  <nav>    <ul>      <li v-on:click=\"changeTab(index)\" :class=\"{active: item.isActive}\" v-for=\"(item,index) in nav\">{{item.title}}</li>    </ul>  </nav>  <section>    <div class=\"swiper-container\">      <div class=\"swiper-wrapper\">        <div class=\"swiper-slide\">          <ul>            <li v-for=\"item in list\">              <i><img :src=\"item.imgSrc\"/></i>              <b v-html=\"item.title\"></b>            </li>          </ul>        </div>        <div class=\"swiper-slide\">slider2</div>        <div class=\"swiper-slide\">slider3</div>      </div>    </div>  </section>  <footer>    <ul>      <li class=\"active\">        <i class=\"yo-ico\">&#xe606;</i>        <b>首页</b>      </li>      <li>        <i class=\"yo-ico\">&#xe611;</i>        <b>发现</b>      </li>      <li>        <i class=\"yo-ico\">&#xe7ac;</i>        <b></b>      </li>      <li>        <i class=\"yo-ico\">&#xf0124;</i>        <b>我的</b>      </li>      <li>        <i class=\"yo-ico\">&#xe620;</i>        <b>退出</b>      </li>    </ul>  </footer></div>"
+	module.exports = "<div class=\"m-index\" id=\"m-index\">  <header>    <span>      <i><img src=\"\"/></i>      <b>随意搜索</b>    </span>  </header>  <section>    <div class=\"banner\">      <div class=\"swiper-container\" id=\"nav-swiper\">        <div class=\"swiper-wrapper\">          <div class=\"swiper-slide index-first\"><img src=\"/images/index/nav-1.jpg\"/></div>          <div class=\"swiper-slide index-second\"><img src=\"/images/index/nav-2.jpg\"/></div>          <div class=\"swiper-slide index-third\"><img src=\"/images/index/nav-3.jpg\"/></div>          <div class=\"swiper-slide index-fourth\"><img src=\"/images/index/nav-4.jpg\"/></div>          <div class=\"swiper-slide index-fifth\"><img src=\"/images/index/nav-5.jpg\"/></div>          <div class=\"swiper-slide index-sixth\"><img src=\"/images/index/nav-6.jpg\"/></div>        </div>      </div>    </div>    <ul>      <li>        <i class=\"yo-ico\">&#xe61e;</i>        <b>景点</b>      </li>      <li>        <i class=\"yo-ico\">&#xe69e;</i>        <b>地图</b>      </li>      <li>        <i class=\"yo-ico\">&#xe627;</i>        <b>路况</b>      </li>      <li>        <i class=\"yo-ico\">&#xe66f;</i>        <b>文化</b>      </li>      <li>        <i class=\"yo-ico\">&#xe646;</i>        <b>住宿</b>      </li>      <li>        <i class=\"yo-ico\">&#xe6aa;</i>        <b>美食</b>      </li>      <li>        <i class=\"yo-ico\">&#xe643;</i>        <b>俱乐部</b>      </li>      <li>        <i class=\"yo-ico\">&#xe60e;</i>        <b>敬请期待</b>      </li>    </ul>  </section>  <footer>    <ul>      <li class=\"active\">        <i class=\"yo-ico\">&#xe613;</i>        <b>首页</b>      </li>      <li>        <i class=\"yo-ico\">&#xe860;</i>        <b>路线</b>      </li>      <li>        <i class=\"yo-ico\">&#xe6c9;</i>        <b></b>      </li>      <li>        <i class=\"yo-ico\">&#xe746;</i>        <b>朋友</b>      </li>      <li>        <i class=\"yo-ico\">&#xe60f;</i>        <b>我</b>      </li>    </ul>  </footer></div>"
 
 /***/ },
 /* 7 */
@@ -95,16 +95,8 @@
 	  el: '#m-index',
 	  data: {
 	    swiper: null,
-	    nav: [{
-	      title: '足球现场',
-	      isActive: true
-	    }, {
-	      title: '足球生活',
-	      isActive: false
-	    }, {
-	      title: '足球美女',
-	      isActive: false
-	    }],
+	    navIndex: 0,
+	    nav: ['足球现场', '足球生活', '足球美女'],
 	    list: []
 	  },
 	  methods: {
@@ -121,6 +113,10 @@
 	      _this.list = res;
 	      _this.swiper = new Swiper('#index-swiper', {
 	        loop: false
+	      });
+	      _this.navSwiper = new Swiper('#nav-swiper', {
+	        loop: false,
+	        effect: 'fade'
 	      });
 	    }).catch(function (e) {
 	      return console.log("Oops, error", e);

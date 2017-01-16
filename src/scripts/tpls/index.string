@@ -1,34 +1,61 @@
-<div class="m-index" id="m-index">
+<!-- <div class="m-index" id="m-index">
   <header>
-    <ul>
-      <li class="yo-ico">&#xe63d;</li>
-      <li>
-        <span class="active">热点</span>
-        <span>关注</span>
-      </li>
-      <li class="yo-ico">&#xe66e;</li>
-    </ul>
+    <span>
+      <i><img src=""/></i>
+      <b>随意搜索</b>
+    </span>
   </header>
-  <nav>
-    <ul>
-      <li v-on:click="changeTab(index)" :class="{active: item.isActive}" v-for="(item,index) in nav">{{item.title}}</li>
-    </ul>
-  </nav>
   <section>
-    <div class="swiper-container" id='index-swiper'>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <ul>
-            <li v-for="item in list">
-              <i><img :src="item.imgSrc"/></i>
-              <b v-html="item.title"></b>
-            </li>
-          </ul>
+    <div class="banner">
+      <div class="swiper-container" id="nav-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide index-first"><img src="/images/index/nav-1.jpg"/></div>
+          <div class="swiper-slide index-second"><img src="/images/index/nav-2.jpg"/></div>
+          <div class="swiper-slide index-third"><img src="/images/index/nav-3.jpg"/></div>
+          <div class="swiper-slide index-fourth"><img src="/images/index/nav-4.jpg"/></div>
+          <div class="swiper-slide index-fifth"><img src="/images/index/nav-5.jpg"/></div>
+          <div class="swiper-slide index-sixth"><img src="/images/index/nav-6.jpg"/></div>
         </div>
-        <div class="swiper-slide">slider2</div>
-        <div class="swiper-slide">slider3</div>
       </div>
     </div>
+    <ul class="nav">
+      <li>
+        <i class="yo-ico a">&#xe61e;</i>
+        <b>景点</b>
+      </li>
+      <li>
+        <i class="yo-ico b">&#xe69e;</i>
+        <b>地图</b>
+      </li>
+      <li>
+        <i class="yo-ico c">&#xe627;</i>
+        <b>路况</b>
+      </li>
+      <li>
+        <i class="yo-ico d">&#xe66f;</i>
+        <b>文化</b>
+      </li>
+      <li>
+        <i class="yo-ico e">&#xe646;</i>
+        <b>住宿</b>
+      </li>
+      <li>
+        <i class="yo-ico f">&#xe6aa;</i>
+        <b>美食</b>
+      </li>
+      <li>
+        <i class="yo-ico g">&#xe643;</i>
+        <b>俱乐部</b>
+      </li>
+      <li>
+        <i class="yo-ico h">&#xe60e;</i>
+        <b>敬请期待</b>
+      </li>
+    </ul>
+    <div class="main-list">
+
+    </div>
+
   </section>
   <footer>
     <ul>
@@ -54,4 +81,4 @@
       </li>
     </ul>
   </footer>
-</div>
+</div> -->
